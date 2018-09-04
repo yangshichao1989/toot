@@ -23,6 +23,8 @@ public class DemoApplication {
 		String[] ss={};
 		System.out.println(ss);
 		
+		List li=new ArrayList<>();
+		
 		SpringApplication.run(DemoApplication.class, args);
 	}
 }
