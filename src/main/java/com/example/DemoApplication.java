@@ -21,6 +21,7 @@ public class DemoApplication {
 		map.put(new Date(),"");
 		
 		String[] ss={};
+		System.out.println(ss);
 		
 		SpringApplication.run(DemoApplication.class, args);
 	}
