@@ -28,6 +28,8 @@ public class ActiveMqClient {
     	System.out.println("ddddddddddddd");
         jmsTemplate.convertAndSend("topic","发送的topic数据!");
         jmsTemplate.convertAndSend("queue","发送的queue数据!");
+        
+        System.out.println("ddddddddddddd");
     }
     @RequestMapping("/hello")
     public void hello(){
