@@ -29,7 +29,7 @@ public class ActiveMqClient {
         jmsTemplate.convertAndSend("topic","发送的topic数据!");
         System.out.println("ddddddddddddd");
         System.out.println("ddddddddddddd");
-        jmsTemplate.convertAndSend("queue","发送的queue数据!");
+        jmsTemplate.convertAndSend("queue","发送的queue数据vvvvvvvvvvvvvvv!");
         System.out.println("ddddddddddddd");
         System.out.println("ddddddddddddd");
     }
