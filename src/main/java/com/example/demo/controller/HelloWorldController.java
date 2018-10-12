@@ -49,9 +49,10 @@ public class HelloWorldController {
 
     @RequestMapping("/send")
     public void send(){
+    	Integer i=100;
+    	Integer j=100;
     	
-    	
-    	System.out.println("ddddddddddddd");
+    	System.out.println(i==j);
         jmsTemplate.convertAndSend(this.topic,"发送的topic数据!");
         jmsTemplate.convertAndSend(this.queue,"发送的queue数据!");
     }
@@ -67,6 +68,7 @@ public class HelloWorldController {
 		list.add(3);
 		list.add(4);
 		list.add(5);
+		list.add(6);
 		list.add(6);
 		for (Object object : list) {
 			System.out.println(object);
