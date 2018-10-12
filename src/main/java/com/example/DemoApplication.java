@@ -1,5 +1,6 @@
 package com.example;
 
+import java.security.ProtectionDomain;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -21,10 +22,24 @@ public class DemoApplication {
 		map.put(new Date(),"");
 		
 		String[] ss={};
-		System.out.println(ss);
+	//	System.out.println(ss);
 		
 		List li=new ArrayList<>();
 		
-		SpringApplication.run(DemoApplication.class, args);
+		
+		Integer i=2000;
+    	Integer j=2000;
+    	
+    	System.out.println(i==(j+0));
+    	
+		li.forEach((str)-> System.out.println(str+"; "));
+		
+//		ProtectionDomain pd = SpringApplication.class.getProtectionDomain();
+//	       System.out.println("-------------------:" +pd.getCodeSource().getLocation());
+//
+//		
+//		
+//		
+//		SpringApplication.run(DemoApplication.class, args);
 	}
 }
